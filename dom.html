@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1>welcome to my blog website</h1>
+    </header>
+
+    <main>
+        <section>
+            <article>
+                <h3>My Awsome Blog-1</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur sint sed soluta veritatis? Officiis
+                    eum repellat debitis sit nihil aliquid?</p>
+            </article>
+            <article>
+                <h3>My Awsome Blog-2</h3>
+                <p>Nihil sapiente quis voluptas corporis magnam cum nobis ex magni ab error, eveniet aut pariatur
+                    dignissimos, tenetur perferendis quae laborum?</p>
+            </article>
+            <article>
+                <h3>My Awsome Blog-3</h3>
+                <p>Vitae tempore, totam, ad hic error ipsa illum maxime nisi obcaecati dolore consequuntur. Accusamus
+                    autem voluptas aliquid omnis, fuga voluptatibus.</p>
+            </article>
+            <article>
+                <h3>My Awsome Blog-4</h3>
+                <p>Vitae tempore, totam, ad hic error ipsa illum maxime nisi obcaecati dolore consequuntur. Accusamus
+                    autem voluptas aliquid omnis, fuga voluptatibus.</p>
+            </article>
+        </section>
+    </main>
+
+    <script>
+        const student = { name: "kissmot ali", age: 16, height: 190 }
+
+        const blogTitle = document.getElementsByTagName('h3')
+        for (const h3 of blogTitle) {
+            console.log(h3.innerText);
+        }
+
+        const blogdetails = document.getElementsByTagName('p');
+        for (const p of blogdetails) {
+            console.log(p.innerText);
+        }
+    </script>
+</body>
+
+</html>
