@@ -13,6 +13,15 @@
             background-color: rgba(218, 148, 98, 0.705);
         }
         */
+
+        /* 
+        .blog {
+            border: 2px solid orange;
+            margin: 5px;
+            border-radius: 10px;
+            padding: 2px;
+        }
+        */
     </style>
 </head>
 
@@ -22,8 +31,8 @@
     </header>
 
     <main>
-        <section>
-            <article>
+        <section class="blogs">
+            <article class="blog">
                 <h3>My Awsome Blog-1</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur sint sed soluta veritatis? Officiis
                     eum repellat debitis sit nihil aliquid?</p>
@@ -33,12 +42,12 @@
                 <p>Nihil sapiente quis voluptas corporis magnam cum nobis ex magni ab error, eveniet aut pariatur
                     dignissimos, tenetur perferendis quae laborum?</p>
             </article>
-            <article>
+            <article class="blog">
                 <h3 id="third-title">My Awsome Blog-3</h3>
                 <p>Vitae tempore, totam, ad hic error ipsa illum maxime nisi obcaecati dolore consequuntur. Accusamus
                     autem voluptas aliquid omnis, fuga voluptatibus.</p>
             </article>
-            <article>
+            <article class="blog">
                 <h3>My Awsome Blog-4</h3>
                 <p>Vitae tempore, totam, ad hic error ipsa illum maxime nisi obcaecati dolore consequuntur. Accusamus
                     autem voluptas aliquid omnis, fuga voluptatibus.</p>
@@ -68,7 +77,18 @@
         thirdTitile.style.backgroundColor = "salmon";
         thirdTitile.style.marginLeft = "20px";
         thirdTitile.style.padding = "10px";
-        thirdTitile.innerText="I can do magic"
+        thirdTitile.innerText = "I can do magic"
+
+        const blogs = document.getElementsByClassName("blog");
+        for (let blog of blogs) {
+
+            blog.style.border = "5px solid blue";
+            blog.style.margin = "5px";
+            blog.style.padding = "10px";
+            blog.style.borderRadius = "10px";
+
+
+        }
 
     </script>
 </body>
