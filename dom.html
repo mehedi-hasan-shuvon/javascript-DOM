@@ -6,6 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        /*
+        #second-title {
+            background-color: rgba(218, 148, 98, 0.705);
+        }
+        */
+    </style>
 </head>
 
 <body>
@@ -21,12 +29,12 @@
                     eum repellat debitis sit nihil aliquid?</p>
             </article>
             <article>
-                <h3>My Awsome Blog-2</h3>
+                <h3 id="second-title">My Awsome Blog-2</h3>
                 <p>Nihil sapiente quis voluptas corporis magnam cum nobis ex magni ab error, eveniet aut pariatur
                     dignissimos, tenetur perferendis quae laborum?</p>
             </article>
             <article>
-                <h3>My Awsome Blog-3</h3>
+                <h3 id="third-title">My Awsome Blog-3</h3>
                 <p>Vitae tempore, totam, ad hic error ipsa illum maxime nisi obcaecati dolore consequuntur. Accusamus
                     autem voluptas aliquid omnis, fuga voluptatibus.</p>
             </article>
@@ -43,13 +51,25 @@
 
         const blogTitle = document.getElementsByTagName('h3')
         for (const h3 of blogTitle) {
-            console.log(h3.innerText);
+            // console.log(h3.innerText);
         }
 
         const blogdetails = document.getElementsByTagName('p');
         for (const p of blogdetails) {
-            console.log(p.innerText);
+            // console.log(p.innerText);
         }
+
+        const secondTitile = document.getElementById("second-title");
+        secondTitile.style.color = 'red';
+        secondTitile.style.textAlign = 'center';
+        secondTitile.innerText = "title of 2nd blog has been changed";
+
+        const thirdTitile = document.getElementById("third-title");
+        thirdTitile.style.backgroundColor = "salmon";
+        thirdTitile.style.marginLeft = "20px";
+        thirdTitile.style.padding = "10px";
+        thirdTitile.innerText="I can do magic"
+
     </script>
 </body>
 
