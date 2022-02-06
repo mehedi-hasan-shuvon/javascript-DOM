@@ -31,7 +31,16 @@
     </header>
 
     <main>
-        <section class="blogs">
+        <section class="blogs" id="blogs">
+            <header>
+                <h2>blog list</h2>
+                <ul id="blog-list">
+                    <li>blog-1</li>
+                    <li>blog-2</li>
+                    <li>blog-3</li>
+                    <li>blog-4</li>
+                </ul>
+            </header>
             <article class="blog">
                 <h3>My Awsome Blog-1</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur sint sed soluta veritatis? Officiis
@@ -79,6 +88,33 @@
         thirdTitile.style.padding = "10px";
         thirdTitile.innerText = "I can do magic"
 
+
+
+        //create and add element by using js
+        //step 1 create the element
+        const li = document.createElement('li');
+        li.innerText = "blog-5";
+        //step2: where to add
+        const ul = document.getElementById("blog-list");
+
+        //step3: appned 
+        ul.appendChild(li);
+
+        //doing same process for add ariticle
+        const article = document.createElement('article');
+        //add class
+        article.classList.add("blog");
+        const h3 = document.createElement("h3");
+        h3.innerText = "my awsome blog 5"
+        const p = document.createElement('p');
+        p.innerText = "Vitae tempore, totam, ad hic error ipsa illum maxime nisi obcaecati dolore consequuntur. Accusamus autem voluptas aliquid omnis, fuga voluptatibus."
+        article.appendChild(h3);
+        article.appendChild(p);
+        const blogsection = document.getElementById("blogs");
+        blogsection.appendChild(article);
+
+
+
         const blogs = document.getElementsByClassName("blog");
         for (let blog of blogs) {
 
@@ -89,6 +125,8 @@
 
 
         }
+
+
 
     </script>
 </body>
