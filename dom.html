@@ -114,6 +114,11 @@
         blogsection.appendChild(article);
 
 
+        //deleting a article
+        const secondblog = blogsection.children[2];
+        blogsection.removeChild(secondblog);
+
+
 
         const blogs = document.getElementsByClassName("blog");
         for (let blog of blogs) {
